@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>msgen</ToolCommandName>
+
+    <PackageId>karto-microservice-generator</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>Drake Karto</Authors>
+    <Company>Drake Karto</Company>
+    <Description>CLI tool for generating .NET microservice Clean Architecture + Domain-Driven Design + Vertical Slice project structures.</Description>
+
+    <PackageTags>dotnet;microservice;clean-architecture;generator;cli</PackageTags>
+    <PackageProjectUrl>https://github.com/K4rt0/karto-microservice-generator</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/K4rt0/karto-microservice-generator</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+
+    <PackageOutputPath>./nupkg</PackageOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
+
+</Project>
